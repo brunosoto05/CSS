@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#columna_izq{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    background-color: crimson;
+}
+
+#columna_der{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;    
+}
+
+.centrar{
+    align-items: center;
+    justify-content: center;
+}
+
+.fila{
+    display: flex;
+    background-color: cadetblue;
+    justify-content: space-between;
+    align-items: center;
+}

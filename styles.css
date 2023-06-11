@@ -1,0 +1,132 @@
+/* Variables */
+/* Las variables son cajas que contienen informacion y que se pueden reutilizar */
+:root{
+    --main-color: red;
+    --title-size: 42px;
+}
+
+
+
+/* Estilos en archivo */
+*{
+    color: rgb(76, 87, 157);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    background-color: aquamarine;
+}
+
+
+div p.subtitulos, h1.subtitulos{
+    color: var(--main-color);
+    background-color: purple;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px 0px;
+    padding: 25px 18px 35px 58px;
+    text-align: center;
+    /* text-decoration: line-through red double 5px; */
+    text-decoration-line: line-through;
+    text-decoration-color: var(--main-color);
+    text-decoration-style: double;
+    text-decoration-thickness: 5px;
+    text-transform: capitalize;
+    /* width: 50%;
+    height: 50%; */
+    /* width: 50vw;
+    height: 50vh; */
+    width: 30rem;
+    height: 30rem;
+}
+
+#parrafoEspecial{
+    color: royalblue;
+    background-color: green;
+}
+
+.color-rojo{
+    color: var(--main-color);
+}
+
+.texto-grande{
+    font-size: var(--title-size);
+}
+
+.borde-rojo{
+    /* border: 1px var(--main-color) solid; */
+    border-color: var(--main-color);
+    border-style: groove;
+    /* border-width: 10px 20px; */
+    border-width: 20px 15px 10px 5px;
+    border-radius: 25px;
+    box-shadow: 5px 5px #888;
+}
+
+.parrafo{
+    color: green ;
+    text-indent: 50px;
+    letter-spacing: 5px;
+    line-height: auto;
+    word-spacing: 5px;
+    text-shadow: 2px 2px 2px blue;
+}
+
+p {
+    display: block;
+    background-image: linear-gradient(to right, rgba(11, 11, 243, 0.67), rgba(0, 247, 255, 0.586), rgba(21, 181, 160, 0.553), rgba(14, 208, 14, 0.558));
+}
+
+button{
+    background-color: var(--main-color);
+}
+
+/* PSEUDO CLASES */
+
+button:hover {
+    background-color: green;
+    width: 300px;
+}
+
+a:visited {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+a:link{
+    color: blue;
+}
+
+input:focus {
+    background-color: var(--main-color);
+}
+
+/* Pseudo elementos */
+
+p::first-letter{
+    font-size: 32px;
+    color: darkgoldenrod;
+}
+
+p::first-line{
+    font-weight: bold;
+}
+
+p::after{
+    content: "Hola mundo";
+}
+
+p::before{
+    content: "Chao mundo";
+}
+
+div{
+    background-image: url(https://th.bing.com/th/id/OIP.Sd0g3BiRc0PafJdymRMQ-AHaHa?pid=ImgDet&rs=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
